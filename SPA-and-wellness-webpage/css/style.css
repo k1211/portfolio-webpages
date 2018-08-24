@@ -104,8 +104,8 @@ nav li {
 
 .points h3 {
     font-family: "Times New Roman", serif;
-    margin: 0 0 30px 0;
-    font-size: 16px;
+    margin: 0 0 20px 0;
+    font-size: 20px;
 }
 
 .points ul {
@@ -119,12 +119,12 @@ nav li {
 }
 
 .points li {
-    font-size: 10px;
-    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 11px;
 }
 
 .points li span {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
 }
 
@@ -134,7 +134,48 @@ nav li {
 
 /* OFFER */
 
-.offer {
-    height: 300px;
+.offers {
+    min-height: 300px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.offer {
+    width: 350px;
+    min-height: 200px;
+    background-color: #fcfbfb;
+    border: .5px solid #f2f2f2;
+    border-radius: 2%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer .image img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.offer h4 {
+    text-transform: uppercase;
+    color: #9AC051;
+}
+
+.offer .offer-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offer button {
+    background-color: #9AC051;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
