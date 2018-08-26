@@ -86,7 +86,7 @@ nav li {
 }
 
 .main-text .offer-btn:hover {
-    background-color: #004c00;
+    background-color: #647e32;
 }
 
 /* WHY US */
@@ -169,17 +169,17 @@ nav li {
     background-size: cover;
 }
 
-.skin-therapy {
+.offer .skin-therapy {
     background-image: url("../images/love-romantic-bath-candlelight.jpg");
     background-position: bottom;
 }
 
-.face-therapy {
+.offer .face-therapy {
     background-image: url("../images/pexels-photo-725998.jpeg");
     background-position: center;
 }
 
-.body-therapy {
+.offer .body-therapy {
     background-image: url("../images/pexels-photo-259810.jpeg");
     background-position: center;
 }
@@ -198,18 +198,68 @@ nav li {
     font-weight: 200;
 }
 
-button.read-more-less-btn {
+.offer .read-more-less-btn {
     background-color: #9AC051;
-    border: none;
-    border-radius: 15%;
     color: white;
     font-size: 9px;
-    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
     cursor: pointer;
     margin-top: 20px;
 }
 
-.short-desc {
+.long-desc {
     display: none;
 }
 
+/* NEWSLETTER */
+
+.newsletter {
+    background-color: #9AC051;
+    height: 120px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Times New Roman", serif;
+    margin: 0 0 15px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+    border-radius: 5px;
+    border: none;
+    font-size: 9px;
+}
+
+.newsletter-form button {
+    background-color: #647e32;
+    color: white;
+    padding: 0 15px;
+}
+
+.newsletter-form input {
+    color: #444444;
+    font-weight: 200;
+    margin-right: 15px;
+    padding: 5px 15px;
+    width: 250px;
+}
+
+/* GALLERY */
+
+.gallery {
+    height: 300px;
+}
