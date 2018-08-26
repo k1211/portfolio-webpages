@@ -169,9 +169,19 @@ nav li {
     background-size: cover;
 }
 
-.skin-therapy{
+.skin-therapy {
     background-image: url("../images/love-romantic-bath-candlelight.jpg");
     background-position: bottom;
+}
+
+.face-therapy {
+    background-image: url("../images/pexels-photo-725998.jpeg");
+    background-position: center;
+}
+
+.body-therapy {
+    background-image: url("../images/pexels-photo-259810.jpeg");
+    background-position: center;
 }
 
 .offer h4 {
