@@ -120,11 +120,11 @@ nav li {
 
 .points li {
     line-height: 30px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .points li span {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
 }
 
@@ -133,6 +133,14 @@ nav li {
 }
 
 /* OFFER */
+
+.offers {
+    min-height: 300px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .offer {
     padding: 50px 100px;
@@ -194,3 +202,4 @@ button.read-more-less-btn {
 .short-desc {
     display: none;
 }
+
