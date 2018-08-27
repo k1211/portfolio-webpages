@@ -273,13 +273,13 @@ nav li {
 .previous-arrow,
 .next-arrow {
     color: #f2f2f2;
-    cursor: pointer;
     padding: 20px;
 }
 
-.previous-arrow:hover,
-.next-arrow:hover {
+.previous-arrow i:hover,
+.next-arrow i:hover {
     color: #9AC051;
+    cursor: pointer;
 }
 
 .slider {
@@ -304,7 +304,26 @@ nav li {
 }
 
 /* PAGE UP */
-.page-up {
+.go-up {
+    color: #444444;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.go-up i {
+    font-size: 24px;
+}
+
+.go-up i:hover {
+    color: #9AC051;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #444444;
     height: 100px;
-    border: 1px solid red;
 }
