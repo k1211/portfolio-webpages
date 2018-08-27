@@ -325,5 +325,49 @@ nav li {
 
 footer {
     background-color: #444444;
-    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    color: #FFFFFF;
+}
+
+footer > section {
+    width: 250px;
+}
+
+.about-us h5 {
+    font-family: "Times New Roman", serif;
+    margin: 0 0 10px 0;
+}
+
+.about-us > p {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 2;
+    margin: 0 0 20px 0;
+}
+
+.social-media {
+    color: #9AC051;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    height: 25px;
+    width: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #9AC051;
+    margin-right: 20px;
+}
+
+.social-media i {
+    color: white;
+    font-size: 14px;
 }
