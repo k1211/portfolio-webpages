@@ -11,10 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     
     // read more/less btn
-    const readMoreLessBtn = document.querySelector('.read-more-less-btn');
-    readMoreLessBtn.addEventListener('click', showHideText);
+    const readMoreLessBtns = document.querySelectorAll('.read-more-less-btn');
+
+    for(let i=0; i < readMoreLessBtns.length; i++) {
+        readMoreLessBtns[i].addEventListener('click', showHideText);
+    }
     
-    function showHideText() {
+    function showHideText(e) {
+        let readMoreLessBtn = e.target;
         let prevSibling = readMoreLessBtn.previousElementSibling;
         
         if (prevSibling.style.display === "none" || prevSibling.style.display === "") {
