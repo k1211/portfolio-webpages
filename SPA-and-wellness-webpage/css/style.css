@@ -378,7 +378,11 @@ footer > section {
     text-decoration: none;
 }
 
-/* FOOTER - CONTECT US */
+/* FOOTER - CONTACT US */
+
+.contact-us {
+    margin-left:  25px;
+}
 
 .contact-us > ul {
     padding: 0;
@@ -401,4 +405,45 @@ footer > section {
     font-size: 9px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/* FOOTER - QUICK LINKS */
+
+.quick-links {
+    display: flex;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+
+.quick-links li {
+    border-bottom: .2px solid #fcfbfb;
+    padding: 14px 0;
+    margin: 0;
+}
+
+.quick-links li.first-link {
+    padding-top: 0;
+}
+
+.quick-links li.last-link {
+    border: none;
+}
+
+.quick-links a {
+    text-decoration: none;
+    font-size: 9px;
+    color: #FFF;
+}
+
+.quick-links i {
+    color: #9AC051;
+    font-size: 8px;
 }
