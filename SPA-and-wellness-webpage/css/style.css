@@ -170,19 +170,10 @@ nav li {
 
 /* OFFER */
 
-.offers {
-    min-height: 300px;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .offer {
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .offer figure {
@@ -245,7 +236,7 @@ nav li {
     margin-top: 20px;
 }
 
-.long-desc {
+.additional-text {
     display: none;
 }
 
