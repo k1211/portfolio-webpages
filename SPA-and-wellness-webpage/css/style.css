@@ -448,3 +448,25 @@ footer > section {
     font-size: 8px;
     padding-right: 5px;
 }
+
+/* COPYRIGHTS */
+.copyrights {
+    padding: 10px 0;
+    background-color: #9AC051;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrights p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.copyrights a {
+    font-size: 8px;
+    text-decoration: none;
+    color: #FFF;
+}
