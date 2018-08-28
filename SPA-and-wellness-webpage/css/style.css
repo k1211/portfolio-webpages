@@ -424,16 +424,16 @@ footer > section {
 }
 
 .quick-links li {
-    border-bottom: .2px solid #fcfbfb;
+    border-bottom: .2px solid #666464;
     padding: 14px 0;
     margin: 0;
 }
 
-.quick-links li.first-link {
+.quick-links ul li:first-child {
     padding-top: 0;
 }
 
-.quick-links li.last-link {
+.quick-links ul li:last-of-type {
     border: none;
 }
 
@@ -446,4 +446,5 @@ footer > section {
 .quick-links i {
     color: #9AC051;
     font-size: 8px;
+    padding-right: 5px;
 }
