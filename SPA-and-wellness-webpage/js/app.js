@@ -17,9 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
         readMoreLessBtns[i].addEventListener('click', showHideText);
     }
     
-    function showHideText(e) {
-        let readMoreLessBtn = e.target;
-        let prevSibling = readMoreLessBtn.previousElementSibling;
+    function showHideText() {
+        let prevSibling = this.previousElementSibling;
         
         if (prevSibling.style.display === "none" || prevSibling.style.display === "") {
             prevSibling.style.display = "block";
