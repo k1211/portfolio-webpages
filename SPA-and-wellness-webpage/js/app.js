@@ -60,22 +60,22 @@ document.addEventListener("DOMContentLoaded", function() {
     let lastSlideIndex = slides.length - 1;
     
     function goToSlide(index) {
-        if (currentIndex >= 0 && currentIndex <= lastSlideIndex) {
-            slider.style.right = (index * slideWidth) + "px";
-        } else if (currentIndex < 0) {
+        if (index < 0) {
+            currentIndex = lastSlideIndex;
+        } else if (index > lastSlideIndex) {
             currentIndex = 0;
         } else {
-            currentIndex = lastSlideIndex;
+            currentIndex = index;
         }
+        slider.style.right = (currentIndex * slideWidth) + "px";    
+        console.log("currentIndex: " + currentIndex);
     }
 
     prev.addEventListener("click", function() {
-        currentIndex--;
-        goToSlide(currentIndex);
+        goToSlide(currentIndex - 1);
     });
     
     next.addEventListener("click", function() {
-        currentIndex++;
-        goToSlide(currentIndex);
+        goToSlide(currentIndex + 1);
     });
 }); 
