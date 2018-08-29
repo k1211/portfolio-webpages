@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    //dropdown menu
+    //      dropdown menu
     const menuTriggerEl = document.querySelector(".menu-trigger-element");
     const nestedMenu = document.querySelector(".nested-menu");
 
@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
              this.style.display = "none";   
     })
     
-    // read more/less btn
+    
+    //      read more/less btn
     const readMoreLessBtns = document.querySelectorAll('.read-more-less-btn');
 
     for(let i=0; i < readMoreLessBtns.length; i++) {
@@ -29,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    //newsletter
+    
+    //      newsletter
     const formInput = document.querySelector('.newsletter-form input');
     const formBtn = document.querySelector('.newsletter-form button');
     const formInfo = document.querySelector('.form-info');
@@ -45,4 +47,35 @@ document.addEventListener("DOMContentLoaded", function() {
         formInfo.style.display = "block";
     });
     
+    
+    //    gallery
+    const prev = document.querySelector(".previous-arrow");
+    const next = document.querySelector(".next-arrow");
+    const stage = document.querySelector(".slider-stage");
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slider li");
+    
+    const slideWidth = slides[0].clientWidth;
+    let currentIndex = 0;
+    let lastSlideIndex = slides.length - 1;
+    
+    function goToSlide(index) {
+        if (currentIndex >= 0 && currentIndex <= lastSlideIndex) {
+            slider.style.right = (index * slideWidth) + "px";
+        } else if (currentIndex < 0) {
+            currentIndex = 0;
+        } else {
+            currentIndex = lastSlideIndex;
+        }
+    }
+
+    prev.addEventListener("click", function() {
+        currentIndex--;
+        goToSlide(currentIndex);
+    });
+    
+    next.addEventListener("click", function() {
+        currentIndex++;
+        goToSlide(currentIndex);
+    });
 }); 
