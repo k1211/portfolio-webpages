@@ -31,7 +31,7 @@ nav a {
     color: #FFFFFF;
 }
 
-nav a:hover {
+nav > ul > li > a:hover {
     border-bottom: 1px solid #9AC051;
 }
 
