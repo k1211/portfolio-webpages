@@ -285,6 +285,12 @@ nav li {
     width: 250px;
 }
 
+.form-info {
+    font-size: 10px;
+    margin: 5px 0 0 0;
+    display: none;
+}
+
 /* GALLERY */
 
 .slider-container {
