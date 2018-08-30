@@ -79,8 +79,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     prev.addEventListener("click", goToPrevSlide);
-    
     next.addEventListener("click", goToNextSlide);
-    
     setInterval(goToNextSlide, 5000);
+  
+    
+    //    go up
+    
+    goUpBtn = document.querySelector(".go-up i");
+    goUpBtn.addEventListener("click", function() {
+       window.scroll({
+            top: 0, 
+            left: 0,
+            behavior: 'smooth'
+       }); 
+    });
 }); 
