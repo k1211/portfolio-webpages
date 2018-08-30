@@ -68,14 +68,19 @@ document.addEventListener("DOMContentLoaded", function() {
             currentIndex = index;
         }
         slider.style.right = (currentIndex * slideWidth) + "px";    
-        console.log("currentIndex: " + currentIndex);
     }
 
-    prev.addEventListener("click", function() {
-        goToSlide(currentIndex - 1);
-    });
-    
-    next.addEventListener("click", function() {
+    function goToNextSlide() {
         goToSlide(currentIndex + 1);
-    });
+    }
+    
+    function goToPrevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+    
+    prev.addEventListener("click", goToPrevSlide);
+    
+    next.addEventListener("click", goToNextSlide);
+    
+    setInterval(goToNextSlide, 5000);
 }); 
