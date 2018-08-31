@@ -1,27 +1,58 @@
+/*
+COLORS : 
+coral: #E57782
+orange: #F47C6C
+mint: #C7E0E4
+white: #fff
+light grey: #E6E7E2
+darker grey: #cfcfcb
+light brown: #D2B595
+*/
+
+body > section {
+    padding: 20px 100px;
+}
+
+.section-heading-spacer {
+    width: 200px;
+    border-top: 3px solid transparent;
+}
+
+/*NAVIGATION */
 header {
-    padding: 10px;
+/*    padding: 10px;*/
+    position: fixed;
+    top: 10px;
+    right: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 header nav > ul {
+    height: 60px;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #000;
+    padding: 0 20px;
+    background-color: #E57782;
     color: #FFF;
+    border: 0.5px solid #fff;
     border-radius: 15px;
     text-transform: uppercase;
+}
+
+header nav > ul:hover {
+    border: 0.5px solid #C7E0E4;
 }
 
 nav > ul li {
     margin: 0 10px; 
     padding: 2px 5px;
-    border: 3px solid grey;
+    border-bottom: 3px solid transparent;
 }
 
 nav > ul li:first-child {
@@ -33,5 +64,135 @@ nav > ul li:last-child {
 }
 
 nav > ul li:hover {
-    border: 3px solid orange;
+    border-bottom: 3px solid #C7E0E4;
+}
+
+/*MAIN IMAGE*/
+
+.main-image {
+    height: 400px;
+    background-image: url(../images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+ 
+.main-image div {
+    border-bottom: 1px solid #FFF;
+}
+
+.main-image h1, 
+.main-image h2 {
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.main-image h1 {
+    font-size: 102px;
+}
+
+.main-image h2 {
+    font-size: 22px;
+}
+
+/*ABOUT ME*/
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.about-me .introduction {
+    max-width: 400px;
+}
+
+.about-me .introduction h3{
+    margin: 0;
+}
+
+.introduction .section-heading-spacer {
+    color: #D2B595;
+}
+
+.about-me .photo {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.social-media ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media ul li {
+    margin: 0 10px;
+}
+
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: 30px;
+    color: #C7E0E4;
+}
+
+.social-media i:hover {
+    color: #E57782;
+}
+
+/*RECENT PROJECTS*/
+
+.recent-projects {
+    background-color: #E6E7E2;
+    border-bottom: 0.5px solid #cfcfcb;
+    border-top: 0.5px solid #cfcfcb;
+}
+
+.recent-projects h3,
+.recent-projects h4 {
+    margin: 0;
+}
+
+.recent-projects h3 {
+    color: #F47C6C;
+    font-size: 14px;
+}
+
+.recent-projects ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.recent-projects ul li{
+    width: 20%;
+    border: 0.5px solid #D2B595;
+    border-radius: 5px;
+    background-color: #C7E0E4;
+    padding: 10px;
+}
+
+.recent-projects a {
+    color: #D2B595;
+    text-decoration: none;
 }
